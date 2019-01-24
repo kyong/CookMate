@@ -1,0 +1,18 @@
+{
+  "name": "fetch-rakuten-category",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "0.0.10",
+    "@types/node": "^7.0.18",
+    "aws-sdk": "^2.51.0",
+    "tslint": "^5.2.0",
+    "typescript": "^2.3.2"
+  }
+}

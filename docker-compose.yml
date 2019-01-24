@@ -1,0 +1,13 @@
+db:
+    image: mysql:latest
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        # MYSQL_DATABASE: ysmall
+web:
+    image: php:5.6.23-apache
+    volumes:
+        - ./www:/var/www/html
+    links:
+        - db:mysql
+    ports:
+        - 8080:80

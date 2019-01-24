@@ -1,0 +1,6 @@
+src/
+node_modules/
+package.json
+tsconfig.json
+!built/node_modules/
+!built/package.json

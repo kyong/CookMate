@@ -1,0 +1,55 @@
+{
+  "name": "cookmate-www",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jquery": "^2.0.46",
+    "@types/jquery.cookie": "^1.4.28",
+    "bootstrap": "^3.3.7",
+    "browserify": "^14.4.0",
+    "browserify-shim": "^3.8.14",
+    "jquery": "^3.2.1",
+    "jquery.cookie": "^1.4.1"
+  },
+  "devDependencies": {
+    "browserify": "^10.1.1",
+    "browserify-css": "^0.11.0",
+    "del": "^3.0.0",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.12.0",
+    "gulp-tsd": "0.0.4",
+    "gulp-typescript": "^2.6.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "gulp-webpack": "^1.5.0",
+    "jquery": "^3.2.1",
+    "parcelify": "^2.2.0",
+    "path": "^0.11.14",
+    "require-dir": "^0.3.2",
+    "ts-loader": "^2.2.2",
+    "typescript": "^2.4.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "webpack": "^2.0.0"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  },
+  "style": [
+    "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+  ]
+}

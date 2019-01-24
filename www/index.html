@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+
+<title>CookMate</title>
+<script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.jsc"></script>
+<script type="text/javascript" src="js/lib/axios/dist/axios.standalone.js"></script>
+<script type="text/javascript" src="js/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+<script type="text/javascript" src="js/lib/CryptoJS/rollups/sha256.js"></script>
+<script type="text/javascript" src="js/lib/CryptoJS/components/hmac.js"></script>
+<script type="text/javascript" src="js/lib/CryptoJS/components/enc-base64.js"></script>
+<script type="text/javascript" src="js/lib/url-template/url-template.js"></script>
+<script type="text/javascript" src="js/lib/apiGatewayCore/sigV4Client.js"></script>
+<script type="text/javascript" src="js/lib/apiGatewayCore/apiGatewayClient.js"></script>
+<script type="text/javascript" src="js/lib/apiGatewayCore/simpleHttpClient.js"></script>
+<script type="text/javascript" src="js/lib/apiGatewayCore/utils.js"></script>
+<script type="text/javascript" src="js/apigClient.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/app.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+<![endif]-->
+</head>
+<body>
+<div class="main">
+  <div class="jumbotron text-center">
+    <h1>CookMate</h1>
+    <p>
+      試験運行中<br>
+      メニューをランダムで取得します。
+    </p> 
+  </div>
+
+<div class="container">
+  <form name="anchor" id="form">
+    <input type="hidden" name="location" value="">
+    <input type="hidden" name="recipeName" value="">
+    <input type="hidden" name="recipeMaterial" value="">
+    <input type="hidden" name="recipeUrl" value="">
+  <div class="row">
+    <div class="col-xs-8 col-md-12">
+      <div id="err"></div>
+      <div id="container">
+        <div class="windows8">
+          <div class="wBall" id="wBall_1">
+            <div class="wInnerBall"></div>
+          </div>
+          <div class="wBall" id="wBall_2">
+            <div class="wInnerBall"></div>
+          </div>
+          <div class="wBall" id="wBall_3">
+            <div class="wInnerBall"></div>
+          </div>
+          <div class="wBall" id="wBall_4">
+            <div class="wInnerBall"></div>
+          </div>
+          <div class="wBall" id="wBall_5">
+            <div class="wInnerBall"></div>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+        <button id="done" type="submit" class="btn btn-primary">これにする</button>
+        <button id="next" type="submit" class="btn btn-default">違うのにする</button>
+    </div>
+  </div>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "runtime": "nodejs6.10",
+  "handler": "built/index.handler",
+  "memory": 128,
+  "timeout": 10
+}

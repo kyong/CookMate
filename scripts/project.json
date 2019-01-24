@@ -1,0 +1,12 @@
+{
+  "name": "fetch-rakuten-category",
+  "description": "",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::423243451001:role/service-role/Lambda",
+  "environment": {},
+  "hooks": {
+    "build": "cp -f ../../tsconfig.json ./ && tsc -p ./ && cp -f ./package.json ./built && npm install --only=production --prefix ./built",
+    "clean": "rm -fr built"
+  }
+}
